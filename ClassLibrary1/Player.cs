@@ -8,10 +8,7 @@ namespace DungeonLibrary
 {
     public sealed class Player : Character
     {
-        //Sealed - This class (Player) is now a child/derived class of Character. (parent/base) Sealed indicates that this class cannot be used as a base class for any other class. No more inheritance can occur. 
-        //fields
-        //N/A
-        //props
+
         public Race CharacterRace { get; set; }
         public Weapon EquippedWeapon { get; set; }
 

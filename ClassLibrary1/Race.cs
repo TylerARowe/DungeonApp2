@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace DungeonLibrary
 {
-        //We cannot make an Enum using Visual Studio's interface. If we want to make an enum, change the word 'class' to 'enum' and make it public.
         public enum Race
         {
             Orc,

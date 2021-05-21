@@ -8,7 +8,7 @@ namespace DungeonLibrary
 {
     public class Monster : Character
     {
-        //fields - since we will have a biz rule on MinDamage, we must create a full field and full prop
+    
         private int _minDamage;
 
         public int MaxDamage { get; set; }
@@ -29,7 +29,7 @@ namespace DungeonLibrary
             }
         }
 
-        //ctors
+       
         public Monster()
         {
 
@@ -45,7 +45,7 @@ namespace DungeonLibrary
             Description = description;
 
         }
-        //methods - ToString() and CalcDamage()
+       
         public override string ToString()
         {
             return string.Format("\n===- MONSTER -===\n" +
@@ -67,8 +67,7 @@ namespace DungeonLibrary
         {
             Random rand = new Random();
             return rand.Next(MinDamage, MaxDamage + 1);
-            /*return base.CalcDamage()*/
-            //we add one to max damage because the upperbound for rand.Next() is exclusive. If we just stuck with MaxDamage, we wouldn't get the entire range we wanted from the Monster's Damage range.
+            
         }
 
     }

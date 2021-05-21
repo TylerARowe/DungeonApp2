@@ -5,15 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DungeonLibrary
-{               //Child : Parent
+{               
     public class Vampire : Monster
     {
-        //fields
-
-        //props
         public DateTime HourChangeBack { get; set; }
 
-        //ctors
+    
         public Vampire(string name, int life, int maxLife, int hitChance, int block, int minDamage, int maxDamage, string description):base(name, life, maxLife, hitChance, block, minDamage, maxDamage, description)
         {
             HourChangeBack = DateTime.Now;
@@ -27,7 +24,7 @@ namespace DungeonLibrary
             }
         }
 
-        //methods
+
         public override string ToString()
         {
             return string.Format("{0}\n{1}", base.ToString(),
